@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title: "Pulido De Pisos de Madera Mármol y Granito en Bogota - Celular 304 277 5545",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "Pulido Brillado y Cristalizado de Pisos de Mármol y Granito en Bogotá - Celular 304 277 5545",
+      siteUrl: `https://pulibrilbogota.com/`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -38,6 +39,60 @@ module.exports = {
     },
     `gatsby-plugin-image`,
     "gatsby-plugin-sharp",
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map(node => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ "content:encoded": node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Pulido De Pisos de Madera Mármol y Granito en Bogota - Celular 304 277 5545",
+          },
+        ],
+      },
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
