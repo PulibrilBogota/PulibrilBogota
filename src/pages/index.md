@@ -27,5 +27,6 @@ intro:
   heading: 
   description: >
     ...
-
+heading: 
+  description: >
 ---
