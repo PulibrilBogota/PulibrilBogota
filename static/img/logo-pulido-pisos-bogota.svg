@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="465" height="113" viewBox="0 0 465 113">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 100px;
+        filter: url(#filter);
+        fill: #f40;
+        text-anchor: middle;
+        font-family: "Franklin Gothic Heavy";
+      }
+    </style>
+    <filter id="filter" x="20" y="22" width="429" height="68" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" in="SourceAlpha"/>
+      <feFlood result="flood" flood-color="#bc6953"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dx="-2.973" dy="-2.677"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="PULIBRIL" class="cls-1" x="232.5" y="89.336"><tspan x="232.5">PULIBRIL</tspan></text>
+</svg>

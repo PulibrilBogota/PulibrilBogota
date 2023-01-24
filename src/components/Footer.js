@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import logo from "../img/logo.svg";
+import logo from "../img/logo-pulido-pisos-bogota.svg";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import youtube from "../img/social/youtube.svg";
