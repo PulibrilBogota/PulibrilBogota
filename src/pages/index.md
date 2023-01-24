@@ -24,11 +24,7 @@ intro:
     - image: /img/reparacion-mantenimiento-pisos-bogota.jpg
       text: >
         Reparación y Mantenimiento de Pisos en Bogota.
-  heading: Test
+  heading: Heading
   description: >
-  Test
-main:
-  heading: Test
-  description: >
-  Test
+    Description...
 ---
