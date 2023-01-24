@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Pulido De Pisos de Madera Mármol y Granito en Bogota - Celular 304 277 5545",
+    title: "Pulido de Pisos de Madera Mármol y Granito en Bogota - Celular 304 277 5545",
     description:
-      "Pulido Brillado y Cristalizado de Pisos de Mármol y Granito en Bogotá - Celular 304 277 5545",
+      "Pulido Brillado y Cristalizado de Pisos de Madera Mármol y Granito en Bogotá - Celular 304 277 5545",
       siteUrl: `https://pulibrilbogota.com/`,
   },
   plugins: [
