@@ -32,12 +32,7 @@ const Footer = () => {
                       <Link className="navbar-item" to="/about">
                         Nosotros
                       </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/products">
-                        Servicios
-                      </Link>
-                    </li>                  
+                    </li>                                    
                   </ul>
                 </section>
               </div>
