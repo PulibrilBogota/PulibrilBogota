@@ -1,14 +1,12 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image"
-import FullWidthImage from "../components/FullWidthImage";
 
 const PulidoPisosMadera = () => (
 
   
   <Layout>
     <div>
-    <FullWidthImage img="../img/pulido-pisos-madera.jpg" alt="Pulido Pisos de Madera" />
       <h1>Pisos Madera</h1>
     </div>
                   <div className="columns">
