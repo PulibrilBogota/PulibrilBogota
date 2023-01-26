@@ -40,4 +40,5 @@ main:
   image3:
     alt: 3
     image: /img/products-grid1.jpg
+full_image: /img/Logo-WhatsApp.png
 ---
