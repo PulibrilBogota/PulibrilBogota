@@ -33,18 +33,18 @@ const Navbar = () => {
                 re-write that makes this unneccesary.
              */}
             <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/blog">
-              Trabajos
+            <Link className="navbar-item" to="/pulido-pisos-madera-servicio-precio-m2">
+              Madera
             </Link>
             </li>
             <li className="navbar-item" style={{padding: "0px"}}>
-              <Link className="navbar-item" to="/about">
-                Nosotros
+              <Link className="navbar-item" to="/pulido-pisos-marmol">
+                Mármol
               </Link>
             </li>          
             <li className="navbar-item" style={{padding: "0px"}}>
-            <Link className="navbar-item" to="/contact">
-              Contacto
+            <Link className="navbar-item" to="/pulido-pisos-granito">
+              Granito
             </Link>
             </li>
          

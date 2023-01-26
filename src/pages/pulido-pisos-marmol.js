@@ -2,13 +2,13 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import FullWidthImage from "../components/FullWidthImage";
 
-const PulidoPisosMadera = () => (
+const PulidoMarmol = () => (
   <Layout>
     <div>
-      <h1>Pisos Madera</h1>
-      <p>Pisos Madera.</p>
+      <h1>Marmol</h1>
+      <p>Prueba con alguno de los elementos del Menú.</p>
     </div>
   </Layout>
 );
 
-export default PulidoPisosMadera;
+export default PulidoMarmol;
