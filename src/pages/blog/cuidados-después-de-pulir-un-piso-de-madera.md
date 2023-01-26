@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Cuidados después de pulir un piso de madera
+date: 2023-01-25T06:00:00.815Z
 description: >
   Después de pulir un piso de madera, es importante tomar algunas medidas para
   mantener el brillo y la durabilidad del piso. 
