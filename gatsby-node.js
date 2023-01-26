@@ -2,6 +2,18 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+exports.createPages = ({ actions }) => {
+  const { createRedirect } = actions
+      createRedirect({ fromPath: '/lavado-limpieza-muebles/', toPath: '/pulido-pisos-madera-servicio-precio-m2/', isPermanent: true })
+      createRedirect({ fromPath: '/lavado-limpieza-pisos/', toPath: '/pulido-pisos-granito/', isPermanent: true })
+      createRedirect({ fromPath: '/lavado-limpieza-sofas/', toPath: '/pulido-pisos-marmol/', isPermanent: true })
+      createRedirect({ fromPath: '/lavado-limpieza-alfombras/', toPath: '/pulido-pisos-granito/', isPermanent: true })
+      createRedirect({ fromPath: '/lavado-limpieza-tapetes/', toPath: '/pulido-pisos-granito/', isPermanent: true })
+      createRedirect({ fromPath: '/lavado-limpieza-cortinas/', toPath: '/pulido-pisos-granito/', isPermanent: true })
+      createRedirect({ fromPath: '/lavado-limpieza-sillones/', toPath: '/pulido-pisos-granito/', isPermanent: true })
+      createRedirect({ fromPath: '/pisos-madera-natural-maciza-nuevos-usados-segunda/', toPath: '/pulido-pisos-madera-servicio-precio-m2/', isPermanent: true })
+    }
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -71,6 +83,7 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
@@ -83,15 +96,3 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
-
-exports.createPages = ({ actions }) => {
-  const { createRedirect } = actions
-      createRedirect({ fromPath: '/lavado-limpieza-muebles/', toPath: '/pulido-pisos-madera-servicio-precio-m2/', isPermanent: true })
-      createRedirect({ fromPath: '/lavado-limpieza-pisos/', toPath: '/pulido-pisos-granito/', isPermanent: true })
-      createRedirect({ fromPath: '/lavado-limpieza-sofas/', toPath: '/pulido-pisos-marmol/', isPermanent: true })
-      createRedirect({ fromPath: '/lavado-limpieza-alfombras/', toPath: '/pulido-pisos-granito/', isPermanent: true })
-      createRedirect({ fromPath: '/lavado-limpieza-tapetes/', toPath: '/pulido-pisos-granito/', isPermanent: true })
-      createRedirect({ fromPath: '/lavado-limpieza-cortinas/', toPath: '/pulido-pisos-granito/', isPermanent: true })
-      createRedirect({ fromPath: '/lavado-limpieza-sillones/', toPath: '/pulido-pisos-granito/', isPermanent: true })
-      createRedirect({ fromPath: '/pisos-madera-natural-maciza-nuevos-usados-segunda/', toPath: '/pulido-pisos-madera-servicio-precio-m2/', isPermanent: true })
-    }
